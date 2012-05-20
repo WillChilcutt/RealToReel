@@ -11,10 +11,13 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize chosenURL = _chosenURL;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Override point for customization after application launch
+    
+    chosenURL = @"";
     return YES;
 }
 							

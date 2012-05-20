@@ -26,6 +26,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openShowTimes:" destination="2" eventType="touchUpInside" id="Cl8-Mb-1vJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sa4-Pq-JgC">
                                 <rect key="frame" x="104" y="170" width="112" height="37"/>
@@ -51,7 +54,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jFm-vb-fSW" kind="modal" id="wAK-lD-hlZ"/>
+                                    <action selector="openFacebook:" destination="2" eventType="touchUpInside" id="wQM-vz-idc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8b2-2T-1MM">
@@ -69,18 +72,36 @@
                                     <action selector="tweet:" destination="2" eventType="touchUpInside" id="Vb6-k0-b1D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="efj-Yj-RcY">
+                                <rect key="frame" x="104" y="305" width="112" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Call Us">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="callUS:" destination="2" eventType="touchUpInside" id="9qd-1x-y1x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="jFm-vb-fSW" kind="modal" identifier="menuToWebSegue" id="eFM-9B-OwG"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="34" y="59"/>
         </scene>
-        <!--Facebook View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="rdm-2T-z1z">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3C-Nn-0Ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="jFm-vb-fSW" customClass="FacebookViewController" sceneMemberID="viewController">
+                <viewController id="jFm-vb-fSW" customClass="WebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XYq-2N-HOw">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,15 +176,29 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="xl0-8g-hp3" id="nbT-AV-de3"/>
-                        <outlet property="facebookWebView" destination="nDj-EX-zL0" id="lGr-bT-f8L"/>
                         <outlet property="forwardButton" destination="HMJ-sr-lZP" id="iC5-FQ-Sqh"/>
                         <outlet property="homeButton" destination="dBm-X2-LR7" id="Ngv-31-Oca"/>
+                        <outlet property="webPageView" destination="nDj-EX-zL0" id="dJD-Vy-ru0"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="529" y="59"/>
+            <point key="canvasLocation" x="635" y="71"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MainMenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
+        </class>
+        <class className="WebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="forwardButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="homeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="webPageView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -7,6 +7,7 @@
 //
 
 #import "MainMenuViewController.h"
+#import "AppDelegate.h"
 #import <Twitter/Twitter.h>
 
 @implementation MainMenuViewController
@@ -31,6 +32,25 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+
+- (IBAction)openFacebook:(id)sender 
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    appDelegate.chosenURL =@"https://m.facebook.com/profile.php?v=feed&id=131030210325&_rdr";
+    
+    [self performSegueWithIdentifier:@"menuToWebSegue" sender:self];
+}
+
+- (IBAction)openShowTimes:(id)sender 
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    appDelegate.chosenURL = @"http://mobile.fandango.com/THEATER_DETAILS?from=th_alltheaters&aid=THEATERNAME&ftheaterid=AANSE&ftms=true";
+    
+    [self performSegueWithIdentifier:@"menuToWebSegue" sender:self];
+}
+
 - (IBAction)tweet:(id)sender 
 {
     if ([TWTweetComposeViewController canSendTweet]) 
@@ -49,6 +69,10 @@
                                   otherButtonTitles: nil];
         [alertView show];
     }
+}
+- (IBAction)callUS:(id)sender 
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:423-282-2131"]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
