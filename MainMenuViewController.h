@@ -10,4 +10,10 @@
 
 @interface MainMenuViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *showTimesButton;
+@property (weak, nonatomic) IBOutlet UIButton *reelDealsButton;
+@property (weak, nonatomic) IBOutlet UIButton *facebookButton;
+@property (weak, nonatomic) IBOutlet UIButton *tweetButton;
+@property (weak, nonatomic) IBOutlet UIButton *callUsButton;
+@property (weak, nonatomic) IBOutlet UIButton *websiteButton;
 @end

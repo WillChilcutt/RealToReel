@@ -17,6 +17,18 @@
 		BEDCDBB015695FCA00F63AAE /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCDBAF15695FCA00F63AAE /* MainMenuViewController.m */; };
 		BEDCDBB915696D4100F63AAE /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDCDBB815696D4100F63AAE /* Twitter.framework */; };
 		BEDCDBBC156972B600F63AAE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCDBBB156972B600F63AAE /* WebViewController.m */; };
+		BEDCDBBF1569850600F63AAE /* homeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBBE1569850600F63AAE /* homeButton.png */; };
+		BEDCDBC31569867400F63AAE /* forwardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBC11569867400F63AAE /* forwardButton.png */; };
+		BEDCDBC5156986AC00F63AAE /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBC4156986AC00F63AAE /* backButton.png */; };
+		BEDCDBC91569879500F63AAE /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBC81569879500F63AAE /* Menu.png */; };
+		BEDCDBCC1569908E00F63AAE /* RealToReelLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBCB1569908E00F63AAE /* RealToReelLogo.png */; };
+		BEDCDBCE156992C000F63AAE /* RealToReelAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBCD156992C000F63AAE /* RealToReelAppIcon.png */; };
+		BEDCDBD415699F4F00F63AAE /* ourSite.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBD115699F4F00F63AAE /* ourSite.png */; };
+		BEDCDBD515699F4F00F63AAE /* reelDealsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBD215699F4F00F63AAE /* reelDealsButton.png */; };
+		BEDCDBD615699F4F00F63AAE /* showTimesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBD315699F4F00F63AAE /* showTimesButton.png */; };
+		BEDCDBDA1569A56200F63AAE /* tweetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBD91569A56200F63AAE /* tweetButton.png */; };
+		BEDCDBDC1569A57100F63AAE /* facebookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBDB1569A57100F63AAE /* facebookButton.png */; };
+		BEDCDBDE1569A6C700F63AAE /* callUs.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBDD1569A6C700F63AAE /* callUs.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +48,18 @@
 		BEDCDBB815696D4100F63AAE /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		BEDCDBBA156972B600F63AAE /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		BEDCDBBB156972B600F63AAE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		BEDCDBBE1569850600F63AAE /* homeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeButton.png; sourceTree = "<group>"; };
+		BEDCDBC11569867400F63AAE /* forwardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardButton.png; sourceTree = "<group>"; };
+		BEDCDBC4156986AC00F63AAE /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		BEDCDBC81569879500F63AAE /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
+		BEDCDBCB1569908E00F63AAE /* RealToReelLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RealToReelLogo.png; sourceTree = "<group>"; };
+		BEDCDBCD156992C000F63AAE /* RealToReelAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RealToReelAppIcon.png; sourceTree = "<group>"; };
+		BEDCDBD115699F4F00F63AAE /* ourSite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ourSite.png; path = ../../../Desktop/ourSite.png; sourceTree = "<group>"; };
+		BEDCDBD215699F4F00F63AAE /* reelDealsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reelDealsButton.png; path = ../../../Desktop/reelDealsButton.png; sourceTree = "<group>"; };
+		BEDCDBD315699F4F00F63AAE /* showTimesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = showTimesButton.png; path = ../../../Desktop/showTimesButton.png; sourceTree = "<group>"; };
+		BEDCDBD91569A56200F63AAE /* tweetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweetButton.png; sourceTree = "<group>"; };
+		BEDCDBDB1569A57100F63AAE /* facebookButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookButton.png; sourceTree = "<group>"; };
+		BEDCDBDD1569A6C700F63AAE /* callUs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callUs.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 		BEDCDB8215695F5700F63AAE = {
 			isa = PBXGroup;
 			children = (
+				BEDCDBCD156992C000F63AAE /* RealToReelAppIcon.png */,
 				BEDCDBB815696D4100F63AAE /* Twitter.framework */,
 				BEDCDB9715695F5800F63AAE /* RealToReel */,
 				BEDCDB9015695F5700F63AAE /* Frameworks */,
@@ -84,6 +109,7 @@
 		BEDCDB9715695F5800F63AAE /* RealToReel */ = {
 			isa = PBXGroup;
 			children = (
+				BEDCDBCA1569907B00F63AAE /* images */,
 				BEDCDBA015695F5800F63AAE /* AppDelegate.h */,
 				BEDCDBA115695F5800F63AAE /* AppDelegate.m */,
 				BEDCDBA315695F5800F63AAE /* MainStoryboard.storyboard */,
@@ -105,6 +131,32 @@
 				BEDCDB9F15695F5800F63AAE /* RealToReel-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEDCDBBD156984F400F63AAE /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BEDCDBDD1569A6C700F63AAE /* callUs.png */,
+				BEDCDBDB1569A57100F63AAE /* facebookButton.png */,
+				BEDCDBD91569A56200F63AAE /* tweetButton.png */,
+				BEDCDBD115699F4F00F63AAE /* ourSite.png */,
+				BEDCDBD215699F4F00F63AAE /* reelDealsButton.png */,
+				BEDCDBD315699F4F00F63AAE /* showTimesButton.png */,
+				BEDCDBC81569879500F63AAE /* Menu.png */,
+				BEDCDBC4156986AC00F63AAE /* backButton.png */,
+				BEDCDBC11569867400F63AAE /* forwardButton.png */,
+				BEDCDBBE1569850600F63AAE /* homeButton.png */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		BEDCDBCA1569907B00F63AAE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BEDCDBCB1569908E00F63AAE /* RealToReelLogo.png */,
+				BEDCDBBD156984F400F63AAE /* buttons */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +212,18 @@
 			files = (
 				BEDCDB9C15695F5800F63AAE /* InfoPlist.strings in Resources */,
 				BEDCDBA515695F5800F63AAE /* MainStoryboard.storyboard in Resources */,
+				BEDCDBBF1569850600F63AAE /* homeButton.png in Resources */,
+				BEDCDBC31569867400F63AAE /* forwardButton.png in Resources */,
+				BEDCDBC5156986AC00F63AAE /* backButton.png in Resources */,
+				BEDCDBC91569879500F63AAE /* Menu.png in Resources */,
+				BEDCDBCC1569908E00F63AAE /* RealToReelLogo.png in Resources */,
+				BEDCDBCE156992C000F63AAE /* RealToReelAppIcon.png in Resources */,
+				BEDCDBD415699F4F00F63AAE /* ourSite.png in Resources */,
+				BEDCDBD515699F4F00F63AAE /* reelDealsButton.png in Resources */,
+				BEDCDBD615699F4F00F63AAE /* showTimesButton.png in Resources */,
+				BEDCDBDA1569A56200F63AAE /* tweetButton.png in Resources */,
+				BEDCDBDC1569A57100F63AAE /* facebookButton.png in Resources */,
+				BEDCDBDE1569A6C700F63AAE /* callUs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

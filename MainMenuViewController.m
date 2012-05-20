@@ -11,6 +11,12 @@
 #import <Twitter/Twitter.h>
 
 @implementation MainMenuViewController
+@synthesize showTimesButton;
+@synthesize reelDealsButton;
+@synthesize facebookButton;
+@synthesize tweetButton;
+@synthesize callUsButton;
+@synthesize websiteButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,11 +30,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
+    [self setShowTimesButton:nil];
+    [self setReelDealsButton:nil];
+    [self setFacebookButton:nil];
+    [self setTweetButton:nil];
+    [self setCallUsButton:nil];
+    [self setWebsiteButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -47,6 +60,14 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     appDelegate.chosenURL = @"http://mobile.fandango.com/THEATER_DETAILS?from=th_alltheaters&aid=THEATERNAME&ftheaterid=AANSE&ftms=true";
+    
+    [self performSegueWithIdentifier:@"menuToWebSegue" sender:self];
+}
+- (IBAction)openWebsite:(id)sender 
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    appDelegate.chosenURL = @"http://www.realtoreeltheater.com/";
     
     [self performSegueWithIdentifier:@"menuToWebSegue" sender:self];
 }
