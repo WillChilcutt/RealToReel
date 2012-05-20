@@ -14,7 +14,9 @@
 		BEDCDB9E15695F5800F63AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCDB9D15695F5800F63AAE /* main.m */; };
 		BEDCDBA215695F5800F63AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCDBA115695F5800F63AAE /* AppDelegate.m */; };
 		BEDCDBA515695F5800F63AAE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDCDBA315695F5800F63AAE /* MainStoryboard.storyboard */; };
-		BEDCDBA815695F5800F63AAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCDBA715695F5800F63AAE /* ViewController.m */; };
+		BEDCDBB015695FCA00F63AAE /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCDBAF15695FCA00F63AAE /* MainMenuViewController.m */; };
+		BEDCDBB71569674900F63AAE /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCDBB61569674900F63AAE /* FacebookViewController.m */; };
+		BEDCDBB915696D4100F63AAE /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDCDBB815696D4100F63AAE /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +31,11 @@
 		BEDCDBA015695F5800F63AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEDCDBA115695F5800F63AAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BEDCDBA415695F5800F63AAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BEDCDBA615695F5800F63AAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BEDCDBA715695F5800F63AAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEDCDBAE15695FCA00F63AAE /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = ../MainMenuViewController.h; sourceTree = "<group>"; };
+		BEDCDBAF15695FCA00F63AAE /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = ../MainMenuViewController.m; sourceTree = "<group>"; };
+		BEDCDBB51569674900F63AAE /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		BEDCDBB61569674900F63AAE /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
+		BEDCDBB815696D4100F63AAE /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDCDBB915696D4100F63AAE /* Twitter.framework in Frameworks */,
 				BEDCDB9215695F5700F63AAE /* UIKit.framework in Frameworks */,
 				BEDCDB9415695F5800F63AAE /* Foundation.framework in Frameworks */,
 				BEDCDB9615695F5800F63AAE /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +56,7 @@
 		BEDCDB8215695F5700F63AAE = {
 			isa = PBXGroup;
 			children = (
+				BEDCDBB815696D4100F63AAE /* Twitter.framework */,
 				BEDCDB9715695F5800F63AAE /* RealToReel */,
 				BEDCDB9015695F5700F63AAE /* Frameworks */,
 				BEDCDB8E15695F5700F63AAE /* Products */,
@@ -80,9 +87,11 @@
 				BEDCDBA015695F5800F63AAE /* AppDelegate.h */,
 				BEDCDBA115695F5800F63AAE /* AppDelegate.m */,
 				BEDCDBA315695F5800F63AAE /* MainStoryboard.storyboard */,
-				BEDCDBA615695F5800F63AAE /* ViewController.h */,
-				BEDCDBA715695F5800F63AAE /* ViewController.m */,
+				BEDCDBAE15695FCA00F63AAE /* MainMenuViewController.h */,
+				BEDCDBAF15695FCA00F63AAE /* MainMenuViewController.m */,
 				BEDCDB9815695F5800F63AAE /* Supporting Files */,
+				BEDCDBB51569674900F63AAE /* FacebookViewController.h */,
+				BEDCDBB61569674900F63AAE /* FacebookViewController.m */,
 			);
 			path = RealToReel;
 			sourceTree = "<group>";
@@ -163,7 +172,8 @@
 			files = (
 				BEDCDB9E15695F5800F63AAE /* main.m in Sources */,
 				BEDCDBA215695F5800F63AAE /* AppDelegate.m in Sources */,
-				BEDCDBA815695F5800F63AAE /* ViewController.m in Sources */,
+				BEDCDBB015695FCA00F63AAE /* MainMenuViewController.m in Sources */,
+				BEDCDBB71569674900F63AAE /* FacebookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
